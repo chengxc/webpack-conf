@@ -4,6 +4,18 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 
 module.exports = {
+    devServer:{
+        //配置服务器的根目录
+        contentBase:path.join(__dirname,"dist"),
+        port:8088,
+        //编译成功立刻打开浏览器浏览
+        open:true,
+        // //反向代理
+        // proxy: {
+        //     "/api": "http://localhost:3000"
+        // },
+        host:"192.168.69.2",
+    },
     entry: {
         main:'./src/index.js',
         user:'./src/index.js'

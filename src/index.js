@@ -4,13 +4,14 @@ import App from "./App.vue"
 var vm=new Vue({
     el:"#app",
     data(){
+        return {
 
+        }
     },
-    methods(){
+    render(c){
+        return c(App);
+    },
+    methods:{
 
-    },
-    template:"<app/>",
-    components:{
-        "app":App
     }
 })
