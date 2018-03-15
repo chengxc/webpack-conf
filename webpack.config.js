@@ -12,7 +12,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "./src/index.html"),
-            hash:true
+            hash:true,
+            minify:{
+                //去除html中的空白字符
+                collapseWhitespace:true,
+                removeComments:true,
+                removeEmptyAttributes:true
+            }
         }),
         new ExtractTextPlugin("style.css")
     ],
