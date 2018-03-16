@@ -6,6 +6,8 @@
 + 构建生产环境：npm run build
 
 ## autoprefixer使用步骤：
++ autoprefixer是postcss的一个插件，没有用过postcass的童鞋查看文档了解postcss的用途
+    - [postcss中文文档](https://github.com/postcss/postcss/blob/HEAD/README.cn.md)
 + 安装2个包：
     - npm i postcss-loader autoprefixer -D
 + webpack.config.js同级创建一个postcss.config.js文件作为postcss的配置文件，在该文件中编写相关配置：
